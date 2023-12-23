@@ -62,7 +62,7 @@ Follow these steps to set up and run the Unicode Decoder in C:
    !
    ```
 
-   *Note: This means the `!` character is the only ASCII which can not be read.
+   *Note: This means the `!` character is the only ASCII which is not read in this program.
 
 ## Contact
 
