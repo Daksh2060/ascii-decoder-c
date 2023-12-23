@@ -1,12 +1,12 @@
 # Unicode Decoder
 
-
+This C-based Unicode Decoder offers a straightforward solution for decoding Unicode characters. Whether it's a character within ASCII or the UTF-8 extension, the program swiftly provides essential information such as the Unicode code point, decimal value, and official character name. Unlike relying on Google searches, which may misinterpret characters and often lack all three pieces of aforementioned information in one place, this Unicode Decoder ensures a more efficient and faster way to obtain accurate details once set up and running.
 
 ## Features
 
-- **:**  
+- **ASCII Character Decoding:**  
 
-- **:** 
+- **UTF-8 Character Decoding:** 
 
 ## How does it work?
 
