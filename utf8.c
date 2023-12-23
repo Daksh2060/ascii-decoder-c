@@ -61,6 +61,7 @@ void print_character_name(unsigned int codepoint) {
     FILE* file = fopen("DerivedName.txt", "r"); 
 
     if (file == NULL) {
+
         perror("Error opening file");
         return;
     }
@@ -71,7 +72,9 @@ void print_character_name(unsigned int codepoint) {
 
     // Read the Unicode code points and character names from the file
     while (fscanf(file, "%X ; %[^\n]", &current_codepoint, character_name) != EOF) {
+
         if (current_codepoint == codepoint) {
+
             printf("Character Name: %s\n", character_name);
             break;
         }
@@ -89,6 +92,7 @@ int main() {
 
     // Continue to read input until '!' is entered
     while (scanf("%4s", input) && input[0] != '!') {
+        
         // Call the decode_utf8 function to process the entered UTF-8 encoded character
         decode_utf8(input);
 
