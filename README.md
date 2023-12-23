@@ -4,9 +4,9 @@ This C-based Unicode Decoder offers a straightforward solution for decoding Unic
 
 ## Features
 
-- **ASCII Character Decoding:**  
+- **ASCII Character Decoding:** Reads decimal value of ASCII characters by casting input `char` as `int`. Allows for faster searching of name index than UTF-8 characters.  
 
-- **UTF-8 Character Decoding:** 
+- **UTF-8 Character Decoding:** Analyzes the first byte of input `char` to determine variable byte length of the character, then decodes each subsequent byte to generate decimal value and unicode code point to search name index.
 
 ## How does it work?
 
